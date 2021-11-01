@@ -2,7 +2,10 @@ module github.com/virtual-kubelet/azure-aci
 
 go 1.16
 
+replace github.com/virtual-kubelet/node-cli => ../node-cli
+
 require (
+	contrib.go.opencensus.io/exporter/jaeger v0.1.0
 	contrib.go.opencensus.io/exporter/ocagent v0.4.12
 	github.com/Azure/azure-sdk-for-go v43.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.0

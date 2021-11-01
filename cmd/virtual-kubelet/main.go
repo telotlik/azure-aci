@@ -49,6 +49,7 @@ func main() {
 	traceConfig := opencensuscli.Config{
 		AvailableExporters: map[string]opencensuscli.ExporterInitFunc{
 			"ocagent": initOCAgent,
+			"jaeger": initJaegerAgent,
 		},
 	}
 
